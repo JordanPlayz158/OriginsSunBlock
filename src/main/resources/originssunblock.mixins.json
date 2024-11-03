@@ -4,9 +4,7 @@
   "package": "dev.jordanadams.originssunblock.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "HackyMixinToGetProperDamageSourceNameAsNameMutableDamageSourceAdditionsHaveNotBeenBackportedAndStaticInjectDidntSeemToWorkForDamageAction",
-    "NoSunDamageMixin",
-    "NoSunDamageVampireCompatMixin"
+    "NoSunDamageMixin"
   ],
   "injectors": {
     "defaultRequire": 1

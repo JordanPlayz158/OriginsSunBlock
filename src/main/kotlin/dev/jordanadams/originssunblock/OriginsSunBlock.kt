@@ -3,7 +3,6 @@ package dev.jordanadams.originssunblock
 import dev.jordanadams.originssunblock.enchantment.SunBlockEnchantment
 import net.fabricmc.api.ModInitializer
 import net.minecraft.enchantment.EnchantmentHelper
-import net.minecraft.entity.damage.DamageSource
 import net.minecraft.item.ItemStack
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
@@ -18,9 +17,7 @@ class OriginsSunBlock : ModInitializer {
 
     val SUN_BLOCK = SunBlockEnchantment()
 
-    var lastCustomDamageSource: Pair<String, DamageSource>? = null
-
-    fun cancelBurnPower(items: Iterable<ItemStack>): Boolean {
+    fun hasHelmetWithSunBlockEnchantment(items: Iterable<ItemStack>): Boolean {
       for (item in items) {
         val enchantments = item.enchantments
         for (i in enchantments.indices) {
