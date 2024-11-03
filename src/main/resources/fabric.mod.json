@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "originssunblock",
+  "version": "${version}",
+  "name": "OriginsSunBlock",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "AGPL-3.0",
+  "icon": "assets/originssunblock/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.jordanadams.originssunblock.OriginsSunBlock"
+    ]
+  },
+  "mixins": [
+    "originssunblock.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "origins": "*"
+  }
+}
